@@ -1,0 +1,27 @@
+{
+    "extends": "@tsconfig/recommended/tsconfig.json",
+    "compilerOptions": {
+        "outDir": "types",
+        "target": "esnext",
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "sourceMap": false,
+        "declaration": false,
+        "allowJs": true,
+        "stripInternal": true,
+        "baseUrl": "./src",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "downlevelIteration": true,
+        "strictPropertyInitialization": false,
+        "paths": {
+            "@/*": ["*"]
+        }
+    },
+    "typeRoots": [
+        "./node_modules/@types",
+        "./src/types",
+        "./src/**/types"
+    ],
+}
